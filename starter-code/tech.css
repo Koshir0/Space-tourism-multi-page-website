@@ -1,0 +1,462 @@
+
+    body{
+    background-image: url(assets/crew/background-crew-desktop.jpg);
+    background-size:  100vw 100vh;
+    background-repeat: no-repeat;
+    color:whitesmoke;
+    font-family: 'Bellefair', serif;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+    position: relative;
+  }
+  ul{
+    padding: 0;
+    margin:0;
+    width: 60%;
+    /* background-color: rgba(73,88,113,.8); */
+    background-color: rgba(255, 255, 255, 4%);
+    /* opacity:.7; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  ul li{
+    list-style-type: none;
+    
+   
+    
+  }
+
+  li:hover{
+    border-bottom:1px solid rgba(255, 255, 255, 10%);
+    cursor: pointer;
+   
+  }
+  li:active{
+    border-bottom:1px solid rgb(255, 255, 255,1);
+  }
+  .hr-nav{
+   width:30%;
+   position: absolute;
+   top: 50px;
+   left:150px;
+   opacity: .3;
+  }
+  .heading{
+      /* background-color: blueviolet; */
+      /* text-align: center; */
+      width:80%;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 20px;
+      margin: auto;
+    }
+    .container{
+      width:80%;
+      margin: auto;
+      /* height: fit-content; */
+  display: flex;
+  flex-direction: row-reverse;
+  /* justify-content: center; */
+  /* background-color: rgb(116, 75, 155); */
+  padding: 0;
+
+}
+    main{
+      display: flex;
+      flex-direction: row;
+      /* background-color: orangered; */
+      justify-content: center;
+      
+      /* justify-content: space-around; */
+      /* width: 100%; */
+      /* background-color: blueviolet; */
+
+    }
+  
+  #menu__toggle{
+      display: none;
+  }
+    .info{
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+  /* width: 50%; */
+  /* height: fit-content; */
+  margin: auto;
+
+  /* justify-content: space-evenly; */
+  
+
+}
+
+.info-sec{
+   /* background-color: cadetblue; */
+  margin: auto;
+   
+   padding-left: 15px;
+   /* height: fit-content; */
+   /* width: 50%; */
+  
+
+ }
+ p{
+   /* background-color: orangered; */
+   width: fit-content;
+   
+  
+ }
+ .job{
+  font-size: 20px;
+  margin: 8px 0;
+
+
+ }
+ .name{
+  margin: 2px 0;
+   font-size: 32px;
+ }
+    a{
+      text-decoration: none;
+      color:white;
+      
+
+    }
+    P{
+      /* font-size: 18px; */
+      line-height: 32px;
+     }
+    
+ #crew{
+   /* margin-top: 7px; */
+   /* width: 568.07px; */
+   height:400px;
+ }
+ .crew-hr{
+   display: none;
+  
+ }
+
+button{
+  border: none;
+   border-radius: 50%;
+   margin-bottom: 7vh;
+   width:50px;
+   height: 50px;
+   font-family: 'Barlow Condensed', sans-serif;
+   /* margin: 25px; */
+  /* width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-color: gray; */
+  
+}
+
+button:active{
+  background-color: white;
+}
+
+ 
+
+
+
+
+   
+  /* # Tablet */
+  /* only screen and (min-width:321px) and (max-width:768px) */
+  @media screen and (min-width: 321px) and (max-width:768px) {
+   
+    body{
+    background-image: url(assets/technology/background-technology-tablet.jpg);
+    background-size: cover;
+    
+
+  }
+  span{
+      display: none;
+    }
+    
+ 
+   
+    .hr-nav{
+     display: none;
+    }
+    .container{
+      flex-direction: column;
+      width: 100%;
+    }
+    main{
+        /* display: flex; */
+        flex-direction: column;
+        width: 100%;
+      margin: 0 auto;
+        /* justify-content: space-around; */
+      }
+      section{
+       
+        width: fit-content;
+        /* height: 382px; */
+        /* height:fit-content; */
+        /* background-color: blueviolet; */
+        margin : 10px auto;
+        text-align: center;
+        /* margin-left: 145px; */
+        
+      }
+      h5{
+       
+        text-align: left;
+        /* margin:0; */
+        
+      }
+      
+      button{
+        /* margin-top: 187px; */
+        /* width: 150px;
+        height:150px; */
+        /* border:none;
+        border-radius: 50%;
+        margin: 0 auto;
+        font-family: 'Bellefair', serif;
+        font-size: 32px; */
+        margin: 15px;
+      }
+      
+    .info{
+  
+  /* background-color:red; */
+  flex-direction: row;
+ 
+  
+
+}
+      .info-sec{
+        margin: auto;
+      }
+     .crew-head{
+       margin:auto
+     }
+      P{
+        text-align: center;
+        width: fit-content;
+        /* margin:auto */
+        
+      }
+      #crew{
+      width:100%;
+      /* height: 50%; */
+      margin: auto;
+     
+    }
+    .heading{
+      width:100%;
+      text-align: left;
+      margin-bottom: 10px;
+      /* margin:auto; */
+      /* text-align: center; */
+    }
+    .job{
+      font-size: 20px;
+    }
+    .name{
+      font-size: 28px;
+    }
+    .job, .name{
+      margin: 0 auto;
+    }
+  }
+
+
+   /* # Phone */
+  /* only screen and (max-width:320px) */
+  @media screen and (max-width: 320px) {
+    html,body{
+      margin: 0;
+      
+    }
+    body{
+      background-image: url(assets/technology/background-technology-mobile.jpg);
+      background-size: cover;
+      
+    }
+    span{
+      display: none;
+    }
+    main{
+      width: 100%;
+    }
+    nav{
+      
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      position: relative;
+    }
+    ul{
+      
+      padding: 0;
+      margin:0;
+      width: 80%;
+      /* background-color: rgba(73,88,113,.8); */
+      background-color: rgba(255, 255, 255, 4%);
+      /* opacity:.7; */
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    ul li{
+      list-style-type: none;
+      
+     
+      
+    }
+ 
+   
+    hr{
+     display: none;
+    }
+
+    .heading{
+      /* background-color: blue; */
+      text-align: center;
+      width:100%;
+      margin-left: 0;
+    }
+    .container{
+      display: block;
+    }
+    .info{
+  
+  /* background-color:red; */
+  flex-direction: row;
+
+  
+
+}
+button{
+        /* margin-top: 187px; */
+        /* width: 150px;
+        height:150px; */
+        /* border:none;
+        border-radius: 50%;
+        margin: 0 auto;
+        font-family: 'Bellefair', serif;
+        font-size: 32px; */
+        margin: 15px;
+      }
+
+    .info-sec{
+      padding:10px;
+      margin:auto;
+  /* display: flex;
+  flex-direction: row; */
+}
+
+    main{
+      flex-direction: column;
+      text-align: center;
+    }
+    .info,.info-sec{
+     width: 100%;
+   /* background-color: cadetblue; */
+  
+ }
+ #crew{
+   width: 100%;
+   height: 50%;
+  
+   /* border: orangered 1px double; */
+ 
+ }
+ .crew-hr{
+   display: block;
+  opacity: .3;
+   margin:0 ;
+ }
+ .name{
+   font-size: 28px;
+   margin: auto;
+ }
+ .job{
+   margin: 0 auto;
+   font-size: 20px;
+   
+ }
+ #menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 110px !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 20px;
+  left: 230px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 300px;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: rgb(151, 151, 151,90%);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #fff;
+ 
+  /* font-family: 'Roboto', sans-serif;  */
+  font-size: 20px;
+  /* font-weight: 600; */
+  /* text-decoration: none; */
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: blueviolet;
+}
+  }
+ 
